@@ -1,0 +1,1218 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='serif' fill='%23B98F8B'>TC</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TULA CIRA | Esthetic & Beauty en Sevilla</title>
+    <meta name="description" content="Tratamientos de estética y belleza personalizados en Sevilla. Manicura, pedicura, tratamientos faciales, corporales, bienestar y más." />
+    
+    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              tulapink: {
+                50: '#FDF8F7',
+                100: '#F8F3F0',
+                200: '#E8D5D1',
+                300: '#D7B8B4',
+                400: '#C7A29E',
+                500: '#B98F8B',
+                600: '#9B716D',
+                700: '#6E514E',
+                800: '#4A3735',
+                900: '#2D2524',
+              },
+              cream: {
+                50: '#FFFFFF',
+                100: '#FFFDFB',
+                200: '#FAF7F2',
+                300: '#F4EFEB',
+                400: '#ECE4DC',
+              },
+              brand: {
+                dark: '#2D2524',
+                warm: '#6E514E',
+                rose: '#B98F8B',
+                soft: '#D7B8B4',
+                blush: '#E8D5D1',
+                bg: '#FAF7F4',
+                card: '#FFFDFB',
+                accent: '#8C4F4B',
+              }
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'Playfair Display', 'Georgia', 'serif'],
+              sans: ['"Plus Jakarta Sans"', 'Manrope', 'system-ui', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Custom Luxury Stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="bg-[#FAF7F4] text-[#2D2524] antialiased selection:bg-[#E8D5D1] selection:text-[#2D2524] overflow-x-hidden pb-20 sm:pb-0">
+
+    <!-- ============================================================ -->
+    <!-- NAVIGATION                                                   -->
+    <!-- ============================================================ -->
+    <header id="mainNavbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 py-5 bg-transparent">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between">
+        
+        <!-- Brand Logo -->
+        <a href="#inicio" class="flex items-center gap-3 group">
+          <!-- Monogram Mark -->
+          <div class="w-10 h-10 rounded-full border border-[#B98F8B]/40 bg-[#FFFDFB]/80 flex items-center justify-center transition-transform group-hover:scale-105 shadow-xs">
+            <span class="font-serif italic text-xl text-[#2D2524] font-medium tracking-tighter">TC</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-xl sm:text-2xl tracking-[0.22em] text-[#2D2524] font-semibold leading-none">TULA CIRA</span>
+            <span class="text-[9px] uppercase tracking-[0.32em] text-[#6E514E] font-medium mt-1">Esthetic & Beauty</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-8 text-xs uppercase tracking-[0.18em] font-medium text-[#2D2524]">
+          <a href="#inicio" class="hover:text-[#B98F8B] transition-colors py-1 relative group">
+            Inicio
+            <span class="absolute bottom-0 left-0 w-0 h-px bg-[#B98F8B] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="#destacados" class="hover:text-[#B98F8B] transition-colors py-1 relative group">
+            Tratamientos
+            <span class="absolute bottom-0 left-0 w-0 h-px bg-[#B98F8B] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="#galeria" class="hover:text-[#B98F8B] transition-colors py-1 relative group">
+            Galería
+            <span class="absolute bottom-0 left-0 w-0 h-px bg-[#B98F8B] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="#sobre-nosotros" class="hover:text-[#B98F8B] transition-colors py-1 relative group">
+            Sobre Tula Cira
+            <span class="absolute bottom-0 left-0 w-0 h-px bg-[#B98F8B] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="#contacto" class="hover:text-[#B98F8B] transition-colors py-1 relative group">
+            Contacto
+            <span class="absolute bottom-0 left-0 w-0 h-px bg-[#B98F8B] transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        </nav>
+
+        <!-- Desktop CTA Action -->
+        <div class="hidden md:flex items-center gap-4">
+          <button 
+            type="button" 
+            data-open-booking
+            class="btn-luxury-primary"
+          >
+            <span>Reservar Cita</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button 
+          type="button" 
+          id="mobileMenuBtn" 
+          class="md:hidden p-2 text-[#2D2524] hover:text-[#B98F8B] transition-colors"
+          aria-label="Abrir menú"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobileMenuDrawer" class="fixed inset-0 z-50 hidden">
+      <div class="absolute inset-0 bg-[#2D2524]/60 backdrop-blur-xs" id="mobileMenuBackdrop"></div>
+      <div class="absolute top-0 right-0 bottom-0 w-4/5 max-w-sm bg-[#FFFDFB] p-6 shadow-2xl flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between pb-6 border-b border-[#E8D5D1]/60">
+            <div class="flex items-center gap-2">
+              <span class="font-serif italic text-lg text-[#2D2524]">TC</span>
+              <span class="font-serif text-lg tracking-[0.2em] font-semibold">TULA CIRA</span>
+            </div>
+            <button type="button" id="closeMobileMenuBtn" class="p-1.5 text-[#6E514E] hover:text-[#2D2524]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+          </div>
+          <nav class="mt-8 flex flex-col gap-6 text-sm uppercase tracking-[0.16em] font-medium text-[#2D2524]">
+            <a href="#inicio" class="mobile-nav-link hover:text-[#B98F8B] transition-colors">Inicio</a>
+            <a href="#destacados" class="mobile-nav-link hover:text-[#B98F8B] transition-colors">Tratamientos Destacados</a>
+            <a href="#servicios-todos" class="mobile-nav-link hover:text-[#B98F8B] transition-colors">Catálogo Completo</a>
+            <a href="#galeria" class="mobile-nav-link hover:text-[#B98F8B] transition-colors">Galería de Resultados</a>
+            <a href="#sobre-nosotros" class="mobile-nav-link hover:text-[#B98F8B] transition-colors">Sobre Tula Cira</a>
+            <a href="#contacto" class="mobile-nav-link hover:text-[#B98F8B] transition-colors">Ubicación & Contacto</a>
+          </nav>
+        </div>
+        <div class="pt-6 border-t border-[#E8D5D1]/60 space-y-3">
+          <button 
+            type="button" 
+            data-open-booking 
+            class="mobile-nav-link btn-luxury-primary w-full text-center"
+          >
+            Reservar Cita
+          </button>
+          <a 
+            href="https://wa.me/34682134196" 
+            data-whatsapp-direct
+            class="btn-luxury-outline w-full text-center"
+          >
+            WhatsApp Directo
+          </a>
+          <p class="text-[11px] text-[#6E514E] text-center pt-2">C. Juan Antonio Cavestany, 6 · Sevilla</p>
+        </div>
+      </div>
+    </div>
+
+
+    <main>
+      <!-- ============================================================ -->
+      <!-- 2. HERO SECTION                                              -->
+      <!-- ============================================================ -->
+      <section id="inicio" class="relative min-h-[92vh] sm:min-h-screen flex items-center pt-24 sm:pt-28 pb-16 overflow-hidden">
+        <!-- Background Editorial Image -->
+        <div class="absolute inset-0 z-0">
+          <img 
+            src="./assets/hero-facial.jpg" 
+            alt="TULA CIRA Esthetic & Beauty Tratamiento Facial Sevilla" 
+            class="w-full h-full object-cover object-center filter brightness-[0.96]"
+          />
+          <!-- Warm editorial lighting gradient overlay -->
+          <div class="absolute inset-0 bg-gradient-to-r from-[#FAF7F4] via-[#FAF7F4]/80 to-transparent sm:w-3/5"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-[#FAF7F4] via-transparent to-transparent sm:hidden"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 w-full">
+          <div class="max-w-xl lg:max-w-2xl space-y-6">
+            
+            <!-- Location & Brand Subtitle Pill -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFFDFB]/90 backdrop-blur-xs border border-[#E8D5D1] shadow-xs">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#B98F8B]"></span>
+              <span class="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-[#6E514E] font-semibold">
+                Sevilla · C. Juan Antonio Cavestany, 6
+              </span>
+            </div>
+
+            <!-- Major Editorial Headline -->
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl text-[#2D2524] leading-[1.08] tracking-tight font-light">
+              Realza tu belleza. <br />
+              <span class="italic font-normal text-[#2D2524]">Cuida de ti.</span>
+            </h1>
+
+            <!-- Supporting Brand Copy -->
+            <p class="text-sm sm:text-base text-[#6E514E] leading-relaxed max-w-lg font-normal">
+              Tratamientos de estética y belleza personalizados en Sevilla. Un santuario íntimo donde el cuidado de la piel, las uñas y el bienestar se funden con la técnica más depurada.
+            </p>
+
+            <!-- Actions -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+              <button 
+                type="button" 
+                data-open-booking
+                class="btn-luxury-primary shadow-sm"
+              >
+                <span>Reservar Cita</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </button>
+
+              <a 
+                href="#destacados" 
+                class="btn-luxury-outline text-center"
+              >
+                Descubrir Tratamientos
+              </a>
+            </div>
+
+            <!-- Subtle Trust Badge -->
+            <div class="pt-6 border-t border-[#E8D5D1]/70 flex items-center gap-6">
+              <div class="flex items-center gap-2">
+                <div class="flex text-[#B98F8B]">
+                  ★★★★★
+                </div>
+                <span class="text-xs font-semibold text-[#2D2524]">5.0 en Google</span>
+              </div>
+              <div class="h-3 w-px bg-[#E8D5D1]"></div>
+              <span class="text-xs text-[#6E514E] uppercase tracking-wider">Atención con cita previa</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================================ -->
+      <!-- 3. BRAND INTRODUCTION                                        -->
+      <!-- ============================================================ -->
+      <section class="py-20 sm:py-28 bg-[#FFFDFB] border-y border-[#E8D5D1]/50">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-5 space-y-6">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-px bg-[#B98F8B]"></span>
+                <span class="text-xs uppercase tracking-[0.25em] text-[#B98F8B] font-semibold">Filosofía Tula Cira</span>
+              </div>
+              
+              <h2 class="font-serif text-3xl sm:text-5xl text-[#2D2524] leading-tight font-light">
+                Tu momento de belleza y desconexión
+              </h2>
+
+              <p class="text-sm sm:text-base text-[#6E514E] leading-relaxed">
+                Un espacio pensado para cuidarte, desconectar y realzar tu belleza con tratamientos personalizados. En Tula Cira cada detalle está cuidado para que sientas la calma desde el primer instante.
+              </p>
+
+              <div class="grid grid-cols-2 gap-6 pt-4 border-t border-[#FAF7F4]">
+                <div>
+                  <span class="font-serif text-2xl text-[#2D2524] block font-medium">Personalizado</span>
+                  <span class="text-xs text-[#6E514E] mt-1 block">Diagnóstico estético adaptado a cada cliente</span>
+                </div>
+                <div>
+                  <span class="font-serif text-2xl text-[#2D2524] block font-medium">Sevilla Centro</span>
+                  <span class="text-xs text-[#6E514E] mt-1 block">Ubicación accesible en Cavestany, 6</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Asymmetric Editorial Photo Composition -->
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-12 gap-4 items-center">
+              <div class="sm:col-span-7 rounded-sm overflow-hidden shadow-sm img-editorial-zoom">
+                <img 
+                  src="./assets/studio-interior.jpg" 
+                  alt="Interior del estudio TULA CIRA en Sevilla" 
+                  class="w-full h-80 sm:h-96 object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="sm:col-span-5 rounded-sm overflow-hidden shadow-sm img-editorial-zoom sm:-mt-10">
+                <img 
+                  src="./assets/editorial-manicure.jpg" 
+                  alt="Manicura editorial en tonos burdeos y nude" 
+                  class="w-full h-64 sm:h-80 object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================================ -->
+      <!-- 4. SIGNATURE SERVICES                                        -->
+      <!-- ============================================================ -->
+      <section id="destacados" class="py-20 sm:py-28 bg-[#FAF7F4]">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8">
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
+            <div class="space-y-3 max-w-xl">
+              <span class="text-xs uppercase tracking-[0.25em] text-[#B98F8B] font-semibold block">Selección Especial</span>
+              <h2 class="font-serif text-3xl sm:text-5xl text-[#2D2524] leading-tight font-light">
+                Tratamientos destacados
+              </h2>
+              <p class="text-xs sm:text-sm text-[#6E514E] leading-relaxed">
+                Nuestros rituales más solicitados, ejecutados con dedicación absoluta y resultados visibles desde la primera sesión.
+              </p>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <a 
+                href="#servicios-todos" 
+                class="text-xs uppercase tracking-[0.18em] text-[#2D2524] font-medium hover:text-[#B98F8B] flex items-center gap-1.5 transition-colors"
+              >
+                <span>Ver catálogo completo</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Dynamic Grid Container for 6 Signature Services -->
+          <div id="signatureServicesGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Rendered dynamically by main.js with luxury styling -->
+          </div>
+
+          <!-- Demo Pricing Transparency Notice -->
+          <p class="text-[11px] text-[#6E514E] text-center mt-10 italic">
+            * Tarifas de demostración basadas en el catálogo de referencia del estudio. Precios y tiempos orientativos para el prototipo digital.
+          </p>
+
+        </div>
+      </section>
+
+
+      <!-- ============================================================ -->
+      <!-- 5. SERVICE EXPLORER                                          -->
+      <!-- ============================================================ -->
+      <section id="servicios-todos" class="py-20 sm:py-28 bg-[#FFFDFB] border-t border-[#E8D5D1]/60">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+          
+          <div class="text-center max-w-2xl mx-auto space-y-4 mb-12">
+            <span class="text-xs uppercase tracking-[0.25em] text-[#B98F8B] font-semibold block">Menú de Tratamientos</span>
+            <h2 class="font-serif text-3xl sm:text-5xl text-[#2D2524] leading-tight font-light">
+              Explora nuestra carta completa
+            </h2>
+            <p class="text-xs sm:text-sm text-[#6E514E] leading-relaxed">
+              Descubre cada una de las opciones para manicura, pedicura, cuidado facial, remodelación corporal, masajes y maquillaje.
+            </p>
+          </div>
+
+          <!-- Search & Filter Controls -->
+          <div class="space-y-6 mb-10">
+            <!-- Search bar -->
+            <div class="relative max-w-md mx-auto">
+              <input 
+                type="text" 
+                id="serviceSearchInput" 
+                placeholder="Buscar tratamiento (ej. rusa, maderoterapia, lifting...)" 
+                class="w-full pl-10 pr-4 py-2.5 bg-[#FAF7F4] border border-[#E8D5D1] rounded-full text-xs text-[#2D2524] focus:outline-none focus:border-[#2D2524] transition-colors shadow-2xs"
+              />
+              <svg class="w-4 h-4 text-[#6E514E] absolute left-3.5 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </div>
+
+            <!-- Category Pills Horizon -->
+            <div class="flex items-center justify-between pb-1">
+              <span class="text-[11px] uppercase tracking-wider text-[#6E514E] font-medium">Filtrar por área:</span>
+              <span id="serviceCountBadge" class="text-[11px] font-mono text-[#B98F8B] font-medium"></span>
+            </div>
+
+            <div id="serviceCategoryTabs" class="flex gap-2 overflow-x-auto pb-3 scrollbar-none no-scrollbar">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+
+          <!-- Service List Container -->
+          <div id="serviceListContainer" class="bg-[#FFFDFB] rounded-sm border border-[#E8D5D1]/80 p-4 sm:p-6 shadow-xs">
+            <!-- Rendered dynamically by main.js with grouping and individual reserve buttons -->
+          </div>
+
+          <!-- Explorer Footer CTA -->
+          <div class="mt-12 text-center p-8 bg-[#FAF7F4] border border-[#E8D5D1]/80 rounded-sm space-y-4">
+            <h3 class="font-serif text-2xl text-[#2D2524]">¿Tienes alguna duda sobre qué tratamiento elegir?</h3>
+            <p class="text-xs text-[#6E514E] max-w-md mx-auto">
+              Consúltanos por WhatsApp sin compromiso y te asesoraremos de manera personalizada según tus necesidades.
+            </p>
+            <div class="pt-2">
+              <a 
+                href="https://wa.me/34682134196" 
+                data-whatsapp-direct
+                class="btn-luxury-rose"
+              >
+                <span>Consultar por WhatsApp</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- ============================================================ -->
+      <!-- 6. BEAUTY GALLERY                                            -->
+      <!-- ============================================================ -->
+      <section id="galeria" class="py-20 sm:py-28 bg-[#FAF7F4]">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8">
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">
+            <div class="space-y-3 max-w-xl">
+              <span class="text-xs uppercase tracking-[0.25em] text-[#B98F8B] font-semibold block">Galería Editorial</span>
+              <h2 class="font-serif text-3xl sm:text-5xl text-[#2D2524] leading-tight font-light">
+                La delicadeza en cada detalle
+              </h2>
+              <p class="text-xs sm:text-sm text-[#6E514E] leading-relaxed">
+                Una mirada a nuestros resultados en manicura rusa, estética facial, lifting de pestañas y tratamientos corporales.
+              </p>
+            </div>
+
+            <div>
+              <a 
+                href="https://www.instagram.com/tulaestheticbeauty/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="btn-luxury-outline inline-flex items-center gap-2"
+              >
+                <span>Ver más en Instagram</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Asymmetric Editorial Gallery Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-5 sm:gap-6">
+            
+            <!-- Large Focus 1: Editorial Manicure -->
+            <div 
+              class="lg:col-span-7 relative group cursor-pointer overflow-hidden rounded-sm bg-[#2D2524] aspect-[4/3] img-editorial-zoom"
+              data-gallery-item
+              data-gallery-src="./assets/editorial-manicure.jpg"
+              data-gallery-caption="Manicura Rusa en acabado burdeos y nude brillante sobre piel cuidada"
+            >
+              <img 
+                src="./assets/editorial-manicure.jpg" 
+                alt="Manicura editorial TULA CIRA" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#2D2524]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div>
+                  <span class="text-[10px] uppercase tracking-widest text-[#D7B8B4]">Manicura de precisión</span>
+                  <p class="font-serif text-xl text-[#FFFDFB] mt-0.5">Técnica combinada y esmaltado impecable</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Focus 2: Real Nail Art from Salon Reference -->
+            <div 
+              class="lg:col-span-5 relative group cursor-pointer overflow-hidden rounded-sm bg-[#2D2524] aspect-[4/3] img-editorial-zoom"
+              data-gallery-item
+              data-gallery-src="./assets/authentic-nail-art.jpg"
+              data-gallery-caption="Diseño artístico exclusivo en uñas naturales del estudio Tula Cira"
+            >
+              <img 
+                src="./assets/authentic-nail-art.jpg" 
+                alt="Uñas y manicura auténtica de TULA CIRA" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#2D2524]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div>
+                  <span class="text-[10px] uppercase tracking-widest text-[#D7B8B4]">Nail Art Estudio</span>
+                  <p class="font-serif text-xl text-[#FFFDFB] mt-0.5">Detalles florales y textura personalizada</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Focus 3: Real Tula Cira Almond Mint & Gold Foil -->
+            <div 
+              class="lg:col-span-4 relative group cursor-pointer overflow-hidden rounded-sm bg-[#2D2524] aspect-square img-editorial-zoom"
+              data-gallery-item
+              data-gallery-src="./assets/nail-art-menta-foil.png"
+              data-gallery-caption="Esculpido almendra verde menta con detalles de pan de oro y líneas metálicas"
+            >
+              <img 
+                src="./assets/nail-art-menta-foil.png" 
+                alt="Nail art almendra verde menta y pan de oro TULA CIRA" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#2D2524]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div>
+                  <span class="text-[10px] uppercase tracking-widest text-[#D7B8B4]">Nail Art Exclusivo</span>
+                  <p class="font-serif text-xl text-[#FFFDFB] mt-0.5">Menta & foil dorado esculpido</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Focus 4: Real Tula Cira Olive Botanical & Gold Leaf -->
+            <div 
+              class="lg:col-span-4 relative group cursor-pointer overflow-hidden rounded-sm bg-[#2D2524] aspect-square img-editorial-zoom"
+              data-gallery-item
+              data-gallery-src="./assets/nail-art-verde-oro.png"
+              data-gallery-caption="Manicura botánica verde oliva con detalles artesanales de pan de oro"
+            >
+              <img 
+                src="./assets/nail-art-verde-oro.png" 
+                alt="Manicura botánica verde oliva y pan de oro TULA CIRA" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#2D2524]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div>
+                  <span class="text-[10px] uppercase tracking-widest text-[#D7B8B4]">Diseño Botánico</span>
+                  <p class="font-serif text-xl text-[#FFFDFB] mt-0.5">Verde oliva y hojas de oro</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Focus 5: Pure White Clean Manicure -->
+            <div 
+              class="lg:col-span-4 relative group cursor-pointer overflow-hidden rounded-sm bg-[#2D2524] aspect-square img-editorial-zoom"
+              data-gallery-item
+              data-gallery-src="./assets/manicura-blanca.png"
+              data-gallery-caption="Manicura blanco puro con esmaltado semipermanente de alta cobertura"
+            >
+              <img 
+                src="./assets/manicura-blanca.png" 
+                alt="Manicura blanca semipermanente TULA CIRA" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#2D2524]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div>
+                  <span class="text-[10px] uppercase tracking-widest text-[#D7B8B4]">Minimalismo Puro</span>
+                  <p class="font-serif text-xl text-[#FFFDFB] mt-0.5">Blanco impoluto y cutícula perfecta</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Focus 6: Lashes & Brows Macro -->
+            <div 
+              class="lg:col-span-4 relative group cursor-pointer overflow-hidden rounded-sm bg-[#2D2524] aspect-square img-editorial-zoom"
+              data-gallery-item
+              data-gallery-src="./assets/lashes-brows.jpg"
+              data-gallery-caption="Lifting y nutrición con queratina para pestañas y diseño de cejas"
+            >
+              <img 
+                src="./assets/lashes-brows.jpg" 
+                alt="Lifting de pestañas y cejas naturales" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#2D2524]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div>
+                  <span class="text-[10px] uppercase tracking-widest text-[#D7B8B4]">Mirada</span>
+                  <p class="font-serif text-xl text-[#FFFDFB] mt-0.5">Lifting de pestañas y visagismo</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Focus 7: Body Treatment / Maderoterapia -->
+            <div 
+              class="lg:col-span-4 relative group cursor-pointer overflow-hidden rounded-sm bg-[#2D2524] aspect-square img-editorial-zoom"
+              data-gallery-item
+              data-gallery-src="./assets/body-maderoterapia.jpg"
+              data-gallery-caption="Maderoterapia y masaje drenante moldeador brasileño"
+            >
+              <img 
+                src="./assets/body-maderoterapia.jpg" 
+                alt="Maderoterapia corporal y bienestar en TULA CIRA" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#2D2524]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div>
+                  <span class="text-[10px] uppercase tracking-widest text-[#D7B8B4]">Corporales</span>
+                  <p class="font-serif text-xl text-[#FFFDFB] mt-0.5">Maderoterapia y drenaje brasileño</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Focus 8: Studio Atmosphere & Celebration -->
+            <div 
+              class="lg:col-span-4 relative group cursor-pointer overflow-hidden rounded-sm bg-[#2D2524] aspect-square img-editorial-zoom"
+              data-gallery-item
+              data-gallery-src="./assets/salon-celebration.png"
+              data-gallery-caption="Celebrando momentos especiales en el estudio TULA CIRA Sevilla"
+            >
+              <img 
+                src="./assets/salon-celebration.png" 
+                alt="Ambiente y momentos en TULA CIRA Sevilla" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#2D2524]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div>
+                  <span class="text-[10px] uppercase tracking-widest text-[#D7B8B4]">Estudio Sevilla</span>
+                  <p class="font-serif text-xl text-[#FFFDFB] mt-0.5">La calidez de nuestro espacio</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- ============================================================ -->
+      <!-- 7. ABOUT / PHILOSOPHY                                        -->
+      <!-- ============================================================ -->
+      <section id="sobre-nosotros" class="py-20 sm:py-28 bg-[#FFFDFB] border-t border-[#E8D5D1]/50">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            <!-- Real Specialist / Founder Image from Supplied References -->
+            <div class="lg:col-span-5 relative">
+              <div class="relative mx-auto max-w-sm lg:max-w-none">
+                <!-- Frame decorative border -->
+                <div class="absolute -top-3 -left-3 w-full h-full border border-[#B98F8B]/40 rounded-sm"></div>
+                <div class="relative overflow-hidden rounded-sm shadow-md bg-[#FAF7F4]">
+                  <img 
+                    src="./assets/owner-portrait.jpg" 
+                    alt="Especialista y fundadora de TULA CIRA Esthetic & Beauty" 
+                    class="w-full h-[460px] object-cover object-top"
+                    loading="lazy"
+                  />
+                  <!-- Monogram badge -->
+                  <div class="absolute bottom-4 left-4 bg-[#FFFDFB]/90 backdrop-blur-xs px-4 py-2 rounded-xs border border-[#E8D5D1]">
+                    <span class="font-serif italic text-sm text-[#2D2524]">Tula Cira</span>
+                    <span class="block text-[10px] uppercase tracking-widest text-[#6E514E]">Especialista Estética</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Editorial Copy -->
+            <div class="lg:col-span-7 space-y-6">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-px bg-[#B98F8B]"></span>
+                <span class="text-xs uppercase tracking-[0.25em] text-[#B98F8B] font-semibold">Nuestra Esencia</span>
+              </div>
+
+              <h2 class="font-serif text-3xl sm:text-5xl text-[#2D2524] leading-tight font-light">
+                Belleza que se siente, <br />
+                <span class="italic font-normal">atención que permanece.</span>
+              </h2>
+
+              <p class="text-sm sm:text-base text-[#6E514E] leading-relaxed">
+                En Tula Cira entendemos la belleza como una experiencia íntima de bienestar y confianza. No creemos en tratamientos genéricos ni en prisas: cada cita está pensada para escucharte, evaluar el estado de tu piel y aplicar técnicas precisas que respeten tu armonía natural.
+              </p>
+
+              <div class="space-y-4 pt-2">
+                <div class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-full bg-[#FAF7F4] border border-[#E8D5D1] flex items-center justify-center shrink-0 mt-0.5 text-[#B98F8B]">
+                    ✦
+                  </div>
+                  <div>
+                    <h4 class="font-serif text-lg text-[#2D2524]">Cuidado personalizado y cercano</h4>
+                    <p class="text-xs text-[#6E514E] mt-0.5 leading-relaxed">Cada tratamiento se adapta a las particularidades de tu piel, tus manos y tu ritmo de vida.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-full bg-[#FAF7F4] border border-[#E8D5D1] flex items-center justify-center shrink-0 mt-0.5 text-[#B98F8B]">
+                    ✦
+                  </div>
+                  <div>
+                    <h4 class="font-serif text-lg text-[#2D2524]">Atención al detalle y técnica pulida</h4>
+                    <p class="text-xs text-[#6E514E] mt-0.5 leading-relaxed">Desde la manicura rusa milimétrica hasta masajes relajantes y maderoterapia modeladora brasileña.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-full bg-[#FAF7F4] border border-[#E8D5D1] flex items-center justify-center shrink-0 mt-0.5 text-[#B98F8B]">
+                    ✦
+                  </div>
+                  <div>
+                    <h4 class="font-serif text-lg text-[#2D2524]">Tu momento de desconexión</h4>
+                    <p class="text-xs text-[#6E514E] mt-0.5 leading-relaxed">Un ambiente seguro, sereno y luminoso en pleno corazón de Sevilla para pausar el día y cuidar de ti.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-4">
+                <button 
+                  type="button" 
+                  data-open-booking
+                  class="btn-luxury-primary"
+                >
+                  <span>Reservar tu cita</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================================ -->
+      <!-- 8. INSTAGRAM COMMUNITY                                       -->
+      <!-- ============================================================ -->
+      <section class="py-20 bg-[#FAF7F4] border-t border-[#E8D5D1]/60">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8">
+          
+          <div class="text-center max-w-xl mx-auto space-y-3 mb-12">
+            <span class="text-xs uppercase tracking-[0.25em] text-[#B98F8B] font-semibold block">Comunidad & Novedades</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-[#2D2524] font-light">
+              Síguenos en Instagram
+            </h2>
+            <a 
+              href="https://www.instagram.com/tulaestheticbeauty/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="inline-block font-serif text-xl sm:text-2xl text-[#2D2524] hover:text-[#B98F8B] transition-colors"
+            >
+              @tulaestheticbeauty
+            </a>
+          </div>
+
+          <!-- Instagram Visual Strip -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+            <a 
+              href="https://www.instagram.com/tulaestheticbeauty/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="group relative aspect-square overflow-hidden rounded-sm bg-[#FFFDFB] shadow-xs"
+            >
+              <img 
+                src="./assets/authentic-nail-art.jpg" 
+                alt="Instagram post manicura TULA CIRA" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-[#2D2524]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#FFFDFB]">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </div>
+            </a>
+
+            <a 
+              href="https://www.instagram.com/tulaestheticbeauty/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="group relative aspect-square overflow-hidden rounded-sm bg-[#FFFDFB] shadow-xs"
+            >
+              <img 
+                src="./assets/nail-art-menta-foil.png" 
+                alt="Instagram post uñas almendra menta TULA CIRA" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-[#2D2524]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#FFFDFB]">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </div>
+            </a>
+
+            <a 
+              href="https://www.instagram.com/tulaestheticbeauty/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="group relative aspect-square overflow-hidden rounded-sm bg-[#FFFDFB] shadow-xs"
+            >
+              <img 
+                src="./assets/nail-art-verde-oro.png" 
+                alt="Instagram post nail art verde y oro TULA CIRA" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-[#2D2524]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#FFFDFB]">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </div>
+            </a>
+
+            <a 
+              href="https://www.instagram.com/tulaestheticbeauty/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="group relative aspect-square overflow-hidden rounded-sm bg-[#FFFDFB] shadow-xs"
+            >
+              <img 
+                src="./assets/manicura-blanca.png" 
+                alt="Instagram post manicura blanca TULA CIRA" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-[#2D2524]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#FFFDFB]">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </div>
+            </a>
+
+            <a 
+              href="https://www.instagram.com/tulaestheticbeauty/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="group relative aspect-square overflow-hidden rounded-sm bg-[#FFFDFB] shadow-xs"
+            >
+              <img 
+                src="./assets/lashes-brows.jpg" 
+                alt="Instagram post pestañas TULA CIRA" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-[#2D2524]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#FFFDFB]">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </div>
+            </a>
+
+            <a 
+              href="https://www.instagram.com/tulaestheticbeauty/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="group relative aspect-square overflow-hidden rounded-sm bg-[#FFFDFB] shadow-xs"
+            >
+              <img 
+                src="./assets/hero-facial.jpg" 
+                alt="Instagram post facial TULA CIRA" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-[#2D2524]/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-[#FFFDFB]">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </div>
+            </a>
+          </div>
+
+          <div class="mt-8 text-center">
+            <a 
+              href="https://www.instagram.com/tulaestheticbeauty/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="text-xs uppercase tracking-[0.2em] font-medium text-[#2D2524] hover:text-[#B98F8B] inline-flex items-center gap-1.5 transition-colors"
+            >
+              <span>Ver publicaciones en Instagram</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- ============================================================ -->
+      <!-- 9. LOCATION & GOOGLE BUSINESS CARD                           -->
+      <!-- ============================================================ -->
+      <section class="py-20 sm:py-28 bg-[#FFFDFB] border-t border-[#E8D5D1]/50">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            
+            <div class="lg:col-span-5 space-y-6">
+              <span class="text-xs uppercase tracking-[0.25em] text-[#B98F8B] font-semibold block">Ubicación en Sevilla</span>
+              <h2 class="font-serif text-3xl sm:text-5xl text-[#2D2524] font-light leading-tight">
+                Ven a visitarnos
+              </h2>
+
+              <p class="text-sm text-[#6E514E] leading-relaxed">
+                Situado en una zona cómoda y céntrica de Sevilla, nuestro estudio te ofrece un entorno tranquilo, discreto y climatizado para disfrutar de tu tratamiento.
+              </p>
+
+              <!-- Address Details -->
+              <div class="p-5 bg-[#FAF7F4] border border-[#E8D5D1] rounded-sm space-y-3">
+                <div class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-[#B98F8B] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <div>
+                    <h4 class="font-serif text-lg text-[#2D2524] font-medium leading-snug">TULA CIRA · Esthetic & Beauty</h4>
+                    <p class="text-xs text-[#6E514E] mt-0.5">C. Juan Antonio Cavestany, 6</p>
+                    <p class="text-xs text-[#6E514E]">41018 Sevilla, España</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3 pt-2 border-t border-[#E8D5D1]/40 text-xs text-[#2D2524]">
+                  <span class="font-medium">Teléfono:</span>
+                  <a href="tel:+34682134196" class="hover:text-[#B98F8B] font-mono transition-colors">+34 682 13 41 96</a>
+                </div>
+              </div>
+
+              <!-- Location Actions -->
+              <div class="flex flex-wrap items-center gap-3">
+                <a 
+                  href="https://maps.google.com/?q=C.+Juan+Antonio+Cavestany,+6,+41018+Sevilla" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="btn-luxury-primary"
+                >
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                  <span>Cómo llegar</span>
+                </a>
+
+                <button 
+                  type="button" 
+                  data-open-booking
+                  class="btn-luxury-outline"
+                >
+                  <span>Reservar cita</span>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Google Maps & Business Profile Preview Card -->
+            <div class="lg:col-span-7">
+              <div class="bg-[#FAF7F4] border border-[#E8D5D1] rounded-sm p-4 sm:p-6 shadow-sm space-y-4">
+                
+                <!-- Google Card Header matching supplied references -->
+                <div class="flex items-start justify-between gap-4 pb-4 border-b border-[#E8D5D1]/60">
+                  <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-full bg-[#E8D5D1]/80 flex items-center justify-center text-[#2D2524] font-serif italic text-lg">
+                      TC
+                    </div>
+                    <div>
+                      <h3 class="font-serif text-xl sm:text-2xl text-[#2D2524] font-medium leading-none">Tulaestheticbeauty</h3>
+                      <div class="flex items-center gap-2 mt-1">
+                        <div class="flex text-[#B98F8B] text-sm">★★★★★</div>
+                        <span class="text-xs font-semibold text-[#2D2524]">5.0</span>
+                        <span class="text-xs text-[#6E514E]">(11 valoraciones en Google)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="text-[10px] uppercase tracking-wider bg-[#FFFDFB] px-2.5 py-1 rounded-xs border border-[#E8D5D1] text-[#6E514E]">
+                    Facial Spa & Uñas
+                  </span>
+                </div>
+
+                <!-- Google Business Visual Preview incorporating real profile references -->
+                <div class="relative h-64 sm:h-72 rounded-sm overflow-hidden bg-[#2D2524]">
+                  <img 
+                    src="./assets/google-maps-listing.png" 
+                    alt="Perfil oficial TULA CIRA en Google Business" 
+                    class="w-full h-full object-cover object-center"
+                    loading="lazy"
+                  />
+                  <!-- Pin overlay badge -->
+                  <div class="absolute bottom-4 left-4 right-4 bg-[#FFFDFB]/95 backdrop-blur-xs p-3 rounded-xs border border-[#E8D5D1] flex items-center justify-between">
+                    <div>
+                      <p class="text-xs font-semibold text-[#2D2524]">C. Juan Antonio Cavestany, 6</p>
+                      <p class="text-[11px] text-[#6E514E]">41018 Sevilla · España</p>
+                    </div>
+                    <a 
+                      href="https://maps.google.com/?q=C.+Juan+Antonio+Cavestany,+6,+41018+Sevilla" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      class="px-3 py-1.5 bg-[#2D2524] text-[#FFFDFB] text-[10px] uppercase tracking-widest font-medium hover:bg-[#6E514E] transition-colors rounded-xs"
+                    >
+                      Abrir Maps
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Verified indicators from Google profile -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-[11px] text-[#6E514E] pt-2">
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-emerald-700">✓</span>
+                    <span>Espacio verificado</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-emerald-700">✓</span>
+                    <span>Atención con cita</span>
+                  </div>
+                  <div class="flex items-center gap-1.5 col-span-2 sm:col-span-1">
+                    <span class="text-emerald-700">✓</span>
+                    <span>Acceso confortable</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================================ -->
+      <!-- 10. CONTACT SECTION                                          -->
+      <!-- ============================================================ -->
+      <section id="contacto" class="py-20 sm:py-28 bg-[#FAF7F4] border-t border-[#E8D5D1]/50">
+        <div class="max-w-4xl mx-auto px-5 sm:px-8 text-center space-y-6">
+          <span class="text-xs uppercase tracking-[0.25em] text-[#B98F8B] font-semibold block">Estamos a tu disposición</span>
+          
+          <h2 class="font-serif text-3xl sm:text-5xl text-[#2D2524] font-light leading-tight">
+            ¿Preparada para tu momento de belleza?
+          </h2>
+
+          <p class="text-sm text-[#6E514E] max-w-xl mx-auto leading-relaxed">
+            Reserva directamente a través de nuestro asistente online o escríbenos por WhatsApp. Estaremos encantadas de recibirte en nuestro estudio de Sevilla.
+          </p>
+
+          <!-- Interactive Action Buttons Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 max-w-2xl mx-auto">
+            
+            <a 
+              href="tel:+34682134196" 
+              class="p-5 bg-[#FFFDFB] border border-[#E8D5D1] rounded-sm hover:border-[#2D2524] transition-all group flex flex-col items-center justify-center gap-2"
+            >
+              <div class="w-10 h-10 rounded-full bg-[#FAF7F4] flex items-center justify-center text-[#2D2524] group-hover:scale-110 transition-transform">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <span class="text-xs uppercase tracking-widest text-[#2D2524] font-semibold">Llamar</span>
+              <span class="text-xs font-mono text-[#6E514E]">+34 682 13 41 96</span>
+            </a>
+
+            <a 
+              href="https://wa.me/34682134196" 
+              data-whatsapp-direct
+              class="p-5 bg-[#FFFDFB] border border-[#E8D5D1] rounded-sm hover:border-[#2D2524] transition-all group flex flex-col items-center justify-center gap-2"
+            >
+              <div class="w-10 h-10 rounded-full bg-[#FAF7F4] flex items-center justify-center text-[#2D2524] group-hover:scale-110 transition-transform">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.149.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.588-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-1.127-.066-.271-.088-.619-.202-1.069-.398-1.895-.824-3.125-2.748-3.219-2.875-.095-.127-.777-1.033-.777-1.969 0-.937.49-1.398.664-1.589.174-.19.38-.238.507-.238.127 0 .253.001.364.007.119.006.277-.045.433.329.163.392.556 1.356.604 1.455.048.099.08.214.016.341-.063.127-.095.206-.19.317-.095.111-.2.248-.286.333-.095.095-.194.198-.083.389.111.19.493.813 1.058 1.316.727.647 1.34.848 1.531.943.19.095.301.079.412-.048.111-.127.476-.555.603-.745.127-.19.254-.159.428-.095.175.063 1.111.524 1.301.619.19.095.317.143.365.222.047.079.047.46-.096.865z"/></svg>
+              </div>
+              <span class="text-xs uppercase tracking-widest text-[#2D2524] font-semibold">WhatsApp</span>
+              <span class="text-xs text-[#6E514E]">Respuesta rápida</span>
+            </a>
+
+            <button 
+              type="button" 
+              data-open-booking 
+              class="p-5 bg-[#2D2524] text-[#FFFDFB] rounded-sm hover:bg-[#6E514E] transition-all group flex flex-col items-center justify-center gap-2"
+            >
+              <div class="w-10 h-10 rounded-full bg-[#3D3231] flex items-center justify-center text-[#FFFDFB] group-hover:scale-110 transition-transform">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              </div>
+              <span class="text-xs uppercase tracking-widest text-[#FFFDFB] font-semibold">Reservar Cita</span>
+              <span class="text-xs text-[#D7B8B4]">Asistente online</span>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+
+    <!-- ============================================================ -->
+    <!-- 11. FOOTER                                                   -->
+    <!-- ============================================================ -->
+    <footer class="bg-[#FFFDFB] border-t border-[#E8D5D1] py-14">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        
+        <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-10 border-b border-[#FAF7F4]">
+          <!-- Brand Column -->
+          <div class="flex flex-col items-center md:items-start text-center md:text-left gap-2">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full border border-[#B98F8B]/40 bg-[#FAF7F4] flex items-center justify-center">
+                <span class="font-serif italic text-lg text-[#2D2524]">TC</span>
+              </div>
+              <span class="font-serif text-2xl tracking-[0.2em] font-semibold text-[#2D2524]">TULA CIRA</span>
+            </div>
+            <p class="text-xs uppercase tracking-[0.25em] text-[#6E514E]">Esthetic & Beauty · Sevilla</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="flex items-center gap-6 text-xs uppercase tracking-wider text-[#6E514E]">
+            <a href="#inicio" class="hover:text-[#2D2524] transition-colors">Inicio</a>
+            <a href="#destacados" class="hover:text-[#2D2524] transition-colors">Tratamientos</a>
+            <a href="#galeria" class="hover:text-[#2D2524] transition-colors">Galería</a>
+            <a href="#sobre-nosotros" class="hover:text-[#2D2524] transition-colors">Sobre Tula Cira</a>
+            <a href="#contacto" class="hover:text-[#2D2524] transition-colors">Contacto</a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="flex items-center gap-4 text-xs">
+            <a 
+              href="https://www.instagram.com/tulaestheticbeauty/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="px-3 py-1.5 border border-[#E8D5D1] rounded-xs text-[#2D2524] hover:bg-[#2D2524] hover:text-[#FFFDFB] transition-colors uppercase tracking-wider"
+            >
+              Instagram
+            </a>
+            <a 
+              href="https://wa.me/34682134196" 
+              data-whatsapp-direct
+              class="px-3 py-1.5 border border-[#E8D5D1] rounded-xs text-[#2D2524] hover:bg-[#2D2524] hover:text-[#FFFDFB] transition-colors uppercase tracking-wider"
+            >
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#6E514E] gap-4">
+          <p>© 2026 TULA CIRA Esthetic & Beauty. Todos los derechos reservados.</p>
+          <p class="font-serif italic text-sm text-[#2D2524]">Tu belleza, tu momento.</p>
+          <p class="text-[11px] text-[#B98F8B]">C. Juan Antonio Cavestany, 6 · 41018 Sevilla</p>
+        </div>
+
+      </div>
+    </footer>
+
+
+    <!-- ============================================================ -->
+    <!-- STICKY MOBILE BOOKING BAR                                    -->
+    <!-- ============================================================ -->
+    <div class="sm:hidden fixed bottom-0 left-0 right-0 z-30 bg-[#FFFDFB]/95 backdrop-blur-md border-t border-[#E8D5D1] px-4 py-2.5 flex items-center gap-2.5 shadow-lg">
+      <a 
+        href="https://wa.me/34682134196" 
+        data-whatsapp-direct
+        class="flex-1 py-3 bg-[#FAF7F4] border border-[#B98F8B] text-[#2D2524] text-center text-xs uppercase tracking-widest font-semibold rounded-xs flex items-center justify-center gap-1.5"
+      >
+        <svg class="w-3.5 h-3.5 fill-current text-emerald-700" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.149.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.588-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-1.127-.066-.271-.088-.619-.202-1.069-.398-1.895-.824-3.125-2.748-3.219-2.875-.095-.127-.777-1.033-.777-1.969 0-.937.49-1.398.664-1.589.174-.19.38-.238.507-.238.127 0 .253.001.364.007.119.006.277-.045.433.329.163.392.556 1.356.604 1.455.048.099.08.214.016.341-.063.127-.095.206-.19.317-.095.111-.2.248-.286.333-.095.095-.194.198-.083.389.111.19.493.813 1.058 1.316.727.647 1.34.848 1.531.943.19.095.301.079.412-.048.111-.127.476-.555.603-.745.127-.19.254-.159.428-.095.175.063 1.111.524 1.301.619.19.095.317.143.365.222.047.079.047.46-.096.865z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+
+      <button 
+        type="button" 
+        data-open-booking
+        class="flex-1 py-3 bg-[#2D2524] text-[#FFFDFB] text-center text-xs uppercase tracking-widest font-semibold rounded-xs shadow-sm"
+      >
+        <span>Reservar Cita</span>
+      </button>
+    </div>
+
+
+    <!-- ============================================================ -->
+    <!-- INTERACTIVE BOOKING DRAWER MODAL                             -->
+    <!-- ============================================================ -->
+    <div id="bookingDrawer" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true">
+      <!-- Backdrop -->
+      <div id="bookingBackdrop" class="drawer-backdrop fixed inset-0 bg-[#2D2524]/65 backdrop-blur-xs opacity-0"></div>
+
+      <!-- Slide-over Panel -->
+      <div class="fixed inset-y-0 right-0 max-w-full flex pl-6 sm:pl-10">
+        <div 
+          id="bookingPanel" 
+          class="drawer-panel w-screen max-w-xl bg-[#FAF7F4] shadow-2xl flex flex-col justify-between translate-x-full overflow-y-auto"
+        >
+          <!-- Drawer Header -->
+          <div class="p-6 sm:p-8 bg-[#FFFDFB] border-b border-[#E8D5D1]/80 sticky top-0 z-10">
+            <div class="flex items-center justify-between pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-full border border-[#B98F8B]/40 bg-[#FAF7F4] flex items-center justify-center font-serif italic text-sm text-[#2D2524]">TC</span>
+                <span class="font-serif text-lg tracking-widest font-semibold text-[#2D2524]">TULA CIRA</span>
+              </div>
+              <button 
+                type="button" 
+                id="closeBookingBtn"
+                class="p-2 rounded-full text-[#6E514E] hover:text-[#2D2524] hover:bg-[#FAF7F4] transition-colors"
+                aria-label="Cerrar reserva"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+              </button>
+            </div>
+
+            <!-- Dynamic step headers -->
+            <div class="space-y-1 mt-2">
+              <h3 id="bookingDrawerTitle" class="font-serif text-2xl sm:text-3xl text-[#2D2524] font-medium leading-tight">
+                Elige tu tratamiento
+              </h3>
+              <p id="bookingDrawerSubtitle" class="text-xs text-[#6E514E] font-normal">
+                Paso 1 de 5 · Selecciona la categoría
+              </p>
+            </div>
+
+            <!-- Progress Bar -->
+            <div id="bookingStepIndicator" class="mt-4"></div>
+          </div>
+
+          <!-- Dynamic Step Content -->
+          <div id="bookingStepContent" class="p-6 sm:p-8 flex-1">
+            <!-- Rendered by js/booking.js -->
+          </div>
+
+          <!-- Drawer Footer Notice -->
+          <div class="p-4 bg-[#FFFDFB] border-t border-[#E8D5D1]/80 text-center text-[11px] text-[#6E514E]">
+            <span>Cita en estudio: C. Juan Antonio Cavestany, 6 · Sevilla</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ============================================================ -->
+    <!-- GALLERY LIGHTBOX MODAL                                       -->
+    <!-- ============================================================ -->
+    <div id="galleryLightbox" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4" role="dialog">
+      <div class="lightbox-backdrop fixed inset-0 bg-[#2D2524]/90 backdrop-blur-md"></div>
+      
+      <div class="relative z-10 max-w-4xl w-full bg-[#FFFDFB] rounded-sm overflow-hidden shadow-2xl p-2 sm:p-4 animate-fade-in">
+        <div class="flex items-center justify-between pb-3 px-2">
+          <div class="flex items-center gap-2">
+            <span class="font-serif italic text-base text-[#2D2524]">TC</span>
+            <span id="lightboxCaption" class="text-xs uppercase tracking-widest text-[#6E514E] font-medium"></span>
+          </div>
+          <button type="button" id="closeLightboxBtn" class="p-1.5 text-[#2D2524] hover:text-[#B98F8B]">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <div class="relative max-h-[75vh] flex items-center justify-center bg-[#FAF7F4] overflow-hidden rounded-xs">
+          <img id="lightboxImg" src="" alt="Detalle ampliado de belleza Tula Cira" class="max-h-[75vh] w-auto object-contain" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Master Application Controller (Universal Protocol Compatible) -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>

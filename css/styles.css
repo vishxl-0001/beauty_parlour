@@ -1,0 +1,234 @@
+/* TULA CIRA — Esthetic & Beauty Luxury Stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-dusty-rose: #B98F8B;
+  --color-mauve: #D7B8B4;
+  --color-blush: #E8D5D1;
+  --color-beige: #F8F3F0;
+  --color-cream: #FFFDFB;
+  --color-taupe: #6E514E;
+  --color-dark: #2D2524;
+  --color-bg: #FAF7F4;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-dark);
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Luxury Grain & Texture Overlay */
+.luxury-subtle-glow {
+  background: radial-gradient(circle at 50% 20%, rgba(232, 213, 209, 0.35) 0%, rgba(250, 247, 244, 0) 70%);
+}
+
+/* Editorial Monogram & Logo Details */
+.logo-monogram {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+
+/* Thin 1px borders & separators */
+.border-subtle {
+  border-color: rgba(185, 143, 139, 0.22);
+}
+
+.border-subtle-light {
+  border-color: rgba(185, 143, 139, 0.12);
+}
+
+/* Elegant Service Item Transitions */
+.service-row {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-row:hover {
+  background-color: rgba(232, 213, 209, 0.25);
+  transform: translateX(4px);
+}
+
+/* Editorial Button Styling */
+.btn-luxury-primary {
+  background-color: var(--color-dark);
+  color: var(--color-cream);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.875rem 1.75rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-luxury-primary:hover {
+  background-color: var(--color-taupe);
+  box-shadow: 0 8px 24px -6px rgba(45, 37, 36, 0.25);
+  transform: translateY(-1px);
+}
+
+.btn-luxury-rose {
+  background-color: var(--color-dusty-rose);
+  color: #FFFFFF;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.875rem 1.75rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-luxury-rose:hover {
+  background-color: #A37773;
+  box-shadow: 0 8px 24px -6px rgba(185, 143, 139, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-luxury-outline {
+  border: 1px solid var(--color-dark);
+  color: var(--color-dark);
+  background: transparent;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.875rem 1.75rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-luxury-outline:hover {
+  background-color: var(--color-dark);
+  color: var(--color-cream);
+  transform: translateY(-1px);
+}
+
+/* Subtle image zoom container */
+.img-editorial-zoom {
+  overflow: hidden;
+}
+
+.img-editorial-zoom img {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-editorial-zoom:hover img {
+  transform: scale(1.035);
+}
+
+/* Custom Scrollbar for Drawer & Page */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D7B8B4;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B98F8B;
+}
+
+/* Drawer Transitions */
+.drawer-backdrop {
+  transition: opacity 0.35s ease;
+}
+
+.drawer-panel {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Calendar Day Styles */
+.calendar-day-btn {
+  transition: all 0.2s ease;
+}
+
+.calendar-day-btn.selected {
+  background-color: var(--color-dark);
+  color: #FFFFFF;
+}
+
+.calendar-day-btn:not(.disabled):hover:not(.selected) {
+  background-color: #E8D5D1;
+}
+
+/* Time Slot Selection */
+.time-slot-btn {
+  transition: all 0.2s ease;
+}
+
+.time-slot-btn.selected {
+  background-color: var(--color-dark);
+  color: #FFFFFF;
+  border-color: var(--color-dark);
+}
+
+.time-slot-btn:hover:not(.selected) {
+  border-color: var(--color-dusty-rose);
+  background-color: rgba(232, 213, 209, 0.2);
+}
+
+/* Category Filter Active Indicator */
+.cat-pill.active {
+  background-color: var(--color-dark);
+  color: #FFFFFF;
+}
+
+.cat-pill:not(.active):hover {
+  background-color: rgba(232, 213, 209, 0.4);
+}
+
+/* Micro-animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
